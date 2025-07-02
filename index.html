@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MovieKu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">MovieKu</div>
+        <nav>
+            <a href="#latest">Latest</a>
+            <a href="#popular">Popular</a>
+            <a href="#top-rated">Top Rated</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="latest">
+            <h2>Latest Movies</h2>
+            <div class="movie-grid" id="latest-movies"></div>
+        </section>
+
+        <section id="popular">
+            <h2>Popular Movies</h2>
+            <div class="movie-grid" id="popular-movies"></div>
+        </section>
+
+        <section id="top-rated">
+            <h2>Top Rated Movies</h2>
+            <div class="movie-grid" id="top-rated-movies"></div>
+        </section>
+
+        <div id="movie-detail-modal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal()">&times;</span>
+                <div id="movie-detail"></div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>Powered by TMDB API - MovieKu 2025</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
